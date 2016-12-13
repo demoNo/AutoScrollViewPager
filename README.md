@@ -6,8 +6,7 @@ README: [English]() | [中文]()
 
 * Gradle
 
-
-1. Add it in your root build.gradle at the end of repositories:
+ * Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
 		repositories {
@@ -16,7 +15,7 @@ allprojects {
 		}
 }
 ```
-2. Add the dependency
+ * Add the dependency
 ```
 dependencies {
 	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.0'
@@ -25,9 +24,7 @@ dependencies {
 
 
 * Maven
-
-
-1. Add the JitPack repository to your build file
+ * Add the JitPack repository to your build file
 ```
 <repositories>
 		<repository>
@@ -36,8 +33,7 @@ dependencies {
 		</repository>
 </repositories>
 ```
-
-2. Add the dependency
+ * Add the dependency
 ```
 <dependency>
 	    <groupId>com.github.demoNo</groupId>
