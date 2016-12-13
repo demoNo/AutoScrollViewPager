@@ -1,12 +1,12 @@
 # AutoScrollViewPager
 
-README: [English](https://github.com/demoNo/AutoScrollViewPager/blob/master/README.md) | [中文](https://github.com/demoNo/AutoScrollViewPager/blob/master/README-zh.md)
+[![Release](https://jitpack.io/v/demoNo/AutoScrollViewPager.svg)]
+(https://jitpack.io/#demoNo/AutoScrollViewPager)
 
-## Add to your project
+## 添加到项目中
 
 Gradle
-
-* Add it in your root build.gradle at the end of repositories:
+* 在项目根目录的build.gradle中添加JitPack仓库
 ```
 allprojects {
 		repositories {
@@ -16,17 +16,16 @@ allprojects {
 }
 ```
 
-* Add the dependency
+* 在项目中添加依赖
 ```
 dependencies {
 	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.0'
 }
 ```
 
-
 Maven
 
-* Add the JitPack repository to your build file
+* 添加JitPack
 ```
 <repositories>
 		<repository>
@@ -36,7 +35,7 @@ Maven
 </repositories>
 ```
 
-* Add the dependency
+* 添加依赖
 ```
 <dependency>
 	    <groupId>com.github.demoNo</groupId>
@@ -45,17 +44,17 @@ Maven
 </dependency>
 ```
 
-# Feature
+# 功能
 
-* Unlimited scrolling
-* Custom slide duration
-* Custom slide interval
-* Slide both right and left
+* 可以无限滚动
+* 自定义滚动时间
+* 自定义自动滚动的时间间隔
+* 可以左右自动滚动
 * todo
 
-# How to use
+# 使用
 
-* Create an Adapter extends InfinitePagerAdapter
+* 创建Adapter继承InfinitePagerAdapter
 ```
 public class MyAdapter extends InfinitePagerAdapter {
 
@@ -77,7 +76,7 @@ public class MyAdapter extends InfinitePagerAdapter {
 }
 ```
 
-* set Adapter
+* 设置ViewPager Adapter
 ```
 AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
 MyAdapter mAdapter = new MyAdapter(data);
