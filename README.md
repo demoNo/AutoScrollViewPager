@@ -4,9 +4,9 @@ README: [English]() | [中文]()
 
 ## Add to your project
 
-* Gradle
+Gradle
 
- * Add it in your root build.gradle at the end of repositories:
+* Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
 		repositories {
@@ -16,7 +16,7 @@ allprojects {
 }
 ```
 
- * Add the dependency
+* Add the dependency
 ```
 dependencies {
 	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.0'
@@ -24,9 +24,9 @@ dependencies {
 ```
 
 
-* Maven
+Maven
 
- * Add the JitPack repository to your build file
+* Add the JitPack repository to your build file
 ```
 <repositories>
 		<repository>
@@ -36,7 +36,7 @@ dependencies {
 </repositories>
 ```
 
- * Add the dependency
+* Add the dependency
 ```
 <dependency>
 	    <groupId>com.github.demoNo</groupId>
