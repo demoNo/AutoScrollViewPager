@@ -1,5 +1,8 @@
 # AutoScrollViewPager
 
+[![Release](https://jitpack.io/v/demoNo/AutoScrollViewPager.svg)]
+(https://jitpack.io/#demoNo/AutoScrollViewPager)
+
 README: [English](https://github.com/demoNo/AutoScrollViewPager/blob/master/README.md) | [中文](https://github.com/demoNo/AutoScrollViewPager/blob/master/README-zh.md)
 
 ## Add to your project
