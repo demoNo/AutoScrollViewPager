@@ -15,6 +15,7 @@ allprojects {
 		}
 }
 ```
+
  * Add the dependency
 ```
 dependencies {
@@ -34,6 +35,7 @@ dependencies {
 		</repository>
 </repositories>
 ```
+
  * Add the dependency
 ```
 <dependency>
@@ -53,7 +55,7 @@ dependencies {
 
 # How to use
 
-1. Create an Adapter extends InfinitePagerAdapter
+ * Create an Adapter extends InfinitePagerAdapter
 ```
 public class MyAdapter extends InfinitePagerAdapter {
 
@@ -74,7 +76,8 @@ public class MyAdapter extends InfinitePagerAdapter {
     }
 }
 ```
-2. set Adapter
+
+ * set Adapter
 ```
 AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
 MyAdapter mAdapter = new MyAdapter(data);
