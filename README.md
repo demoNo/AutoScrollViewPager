@@ -19,11 +19,12 @@ allprojects {
 ```
 dependencies {
 	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.0'
-  }
-  ```
+}
+```
 
 
 * Maven
+
  * Add the JitPack repository to your build file
 ```
 <repositories>
@@ -50,7 +51,7 @@ dependencies {
 * Slide both right and left
 * todo
 
-#How to use
+# How to use
 
 1. Create an Adapter extends InfinitePagerAdapter
 ```
