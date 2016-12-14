@@ -6,7 +6,7 @@
 
 Gradle
 * 在项目根目录的build.gradle中添加JitPack仓库
-```
+```Gradle
 allprojects {
 		repositories {
 			...
@@ -16,7 +16,7 @@ allprojects {
 ```
 
 * 在项目中添加依赖
-```
+```Gradle
 dependencies {
 	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.1'
 }
@@ -25,7 +25,7 @@ dependencies {
 Maven
 
 * 添加JitPack
-```
+```xml
 <repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -35,7 +35,7 @@ Maven
 ```
 
 * 添加依赖
-```
+```xml
 <dependency>
 	    <groupId>com.github.demoNo</groupId>
 	    <artifactId>AutoScrollViewPager</artifactId>
@@ -55,7 +55,7 @@ Maven
 
 * 在xml中定义
 
-```
+```xml
 <com.github.demono.AutoScrollViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@ Maven
 ```
 
 * 创建Adapter继承InfinitePagerAdapter
-```
+```Java
 public class MyAdapter extends InfinitePagerAdapter {
 
     private List<String> data;
@@ -89,12 +89,15 @@ public class MyAdapter extends InfinitePagerAdapter {
 ```
 
 * 设置ViewPager Adapter
-```
-AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
-MyAdapter mAdapter = new MyAdapter(data);
-mViewPager.setAdapter(mAdapter);
-// optional start auto scroll
-mViewPager.startAutoScroll();
+```Java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
+    MyAdapter mAdapter = new MyAdapter(data);
+    mViewPager.setAdapter(mAdapter);
+    // optional start auto scroll
+    mViewPager.startAutoScroll();
+}
 ```
 
 # 更多设置

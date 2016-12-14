@@ -9,7 +9,7 @@ README: [English](https://github.com/demoNo/AutoScrollViewPager/blob/master/READ
 Gradle
 
 * Add it in your root build.gradle at the end of repositories:
-```
+```Gradle
 allprojects {
 		repositories {
 			...
@@ -19,7 +19,7 @@ allprojects {
 ```
 
 * Add the dependency
-```
+```Gradle
 dependencies {
 	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.1'
 }
@@ -29,7 +29,7 @@ dependencies {
 Maven
 
 * Add the JitPack repository to your build file
-```
+```xml
 <repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -39,7 +39,7 @@ Maven
 ```
 
 * Add the dependency
-```
+```xml
 <dependency>
 	    <groupId>com.github.demoNo</groupId>
 	    <artifactId>AutoScrollViewPager</artifactId>
@@ -59,7 +59,7 @@ Maven
 
 * use in xml
 
-```
+```xml
 <com.github.demono.AutoScrollViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
@@ -71,7 +71,7 @@ Maven
 ```
 
 * Create an Adapter extends InfinitePagerAdapter
-```
+```Java
 public class MyAdapter extends InfinitePagerAdapter {
 
     private List<String> data;
@@ -93,12 +93,15 @@ public class MyAdapter extends InfinitePagerAdapter {
 ```
 
 * set Adapter
-```
-AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
-MyAdapter mAdapter = new MyAdapter(data);
-mViewPager.setAdapter(mAdapter);
-// optional start auto scroll
-mViewPager.startAutoScroll();
+```Java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
+    MyAdapter mAdapter = new MyAdapter(data);
+    mViewPager.setAdapter(mAdapter);
+    // optional start auto scroll
+    mViewPager.startAutoScroll();
+}
 ```
 
 # More setting
