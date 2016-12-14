@@ -1,7 +1,6 @@
 # AutoScrollViewPager
 
-[![Release](https://jitpack.io/v/demoNo/AutoScrollViewPager.svg)]
-(https://jitpack.io/#demoNo/AutoScrollViewPager)
+[![Release](https://jitpack.io/v/demoNo/AutoScrollViewPager.svg)](https://jitpack.io/#demoNo/AutoScrollViewPager)  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 README: [English](https://github.com/demoNo/AutoScrollViewPager/blob/master/README.md) | [中文](https://github.com/demoNo/AutoScrollViewPager/blob/master/README-zh.md)
 
