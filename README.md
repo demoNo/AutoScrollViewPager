@@ -21,7 +21,7 @@ allprojects {
 * Add the dependency
 ```
 dependencies {
-	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.0'
+	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.1'
 }
 ```
 
@@ -43,7 +43,7 @@ Maven
 <dependency>
 	    <groupId>com.github.demoNo</groupId>
 	    <artifactId>AutoScrollViewPager</artifactId>
-	    <version>v1.0.0</version>
+	    <version>v1.0.1</version>
 </dependency>
 ```
 
