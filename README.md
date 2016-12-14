@@ -4,7 +4,7 @@
 
 README: [English](https://github.com/demoNo/AutoScrollViewPager/blob/master/README.md) | [中文](https://github.com/demoNo/AutoScrollViewPager/blob/master/README-zh.md)
 
-![](https://raw.githubusercontent.com/demoNo/AutoScrollViewPager/master/design/screen_record.gif)
+![](https://raw.githubusercontent.com/demoNo/AutoScrollViewPager/master/art/screen_record.gif)
 
 ## Add to your project
 
@@ -59,7 +59,7 @@ Maven
 
 # How to use
 
-* use in xml
+* Use in xml
 
 ```xml
 <com.github.demono.AutoScrollViewPager
@@ -94,7 +94,7 @@ public class MyAdapter extends InfinitePagerAdapter {
 }
 ```
 
-* set Adapter
+* Set Adapter
 ```Java
 @Override
 protected void onCreate(Bundle savedInstanceState) {

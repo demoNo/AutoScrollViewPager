@@ -2,7 +2,7 @@
 
 [![Release](https://jitpack.io/v/demoNo/AutoScrollViewPager.svg)](https://jitpack.io/#demoNo/AutoScrollViewPager) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-![](https://raw.githubusercontent.com/demoNo/AutoScrollViewPager/master/design/screen_record.gif)
+![](https://raw.githubusercontent.com/demoNo/AutoScrollViewPager/master/art/screen_record.gif)
 
 ## 添加到项目中
 
