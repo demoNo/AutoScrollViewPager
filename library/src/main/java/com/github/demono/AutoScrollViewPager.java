@@ -27,7 +27,7 @@ public class AutoScrollViewPager extends ViewPager {
     private static final String TAG = "AutoScrollViewPager";
 
     // 默认滚动间隔时间
-    private static final int DEFAULT_SLIDE_INTERVAL = 2000;
+    private static final int DEFAULT_SLIDE_INTERVAL = 5000;
     // 自动滚动间隔时间
     private int slideInterval = DEFAULT_SLIDE_INTERVAL;
 
@@ -87,7 +87,7 @@ public class AutoScrollViewPager extends ViewPager {
                         DIRECTION_RIGHT);
                 stopWhenTouch = array.getBoolean(R.styleable.AutoScrollViewPager_stopWhenTouch,
                         true);
-                cycle = array.getBoolean(R.styleable.AutoScrollViewPager_cycle, true);
+                cycle = array.getBoolean(R.styleable.AutoScrollViewPager_cycle, false);
                 slideDuration = array.getInt(R.styleable.AutoScrollViewPager_slideDirection,
                         DEFAULT_SLIDE_DURATION);
             } finally {
@@ -131,6 +131,8 @@ public class AutoScrollViewPager extends ViewPager {
                 setCurrentItem(totalCount - 1, true);
             } else if (nextItem == totalCount) {
                 setCurrentItem(0, true);
+            } else {
+                setCurrentItem(nextItem, true);
             }
         } else {
             setCurrentItem(nextItem, true);

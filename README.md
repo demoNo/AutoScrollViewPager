@@ -105,11 +105,11 @@ mViewPager.startAutoScroll();
 
 * `startAutoScroll()` Start auto scroll.
 * `stopAutoScroll()` Stop auto scroll.
-* `setSlideInterval(int slideInterval)` Set each item slide interval.
-* `setDirection(int direction)` Set auto scroll direction `DIRECTION_RIGHT` or `DIRECTION_LEFT`.
-* `setStopWhenTouch(boolean stopWhenTouch)` Whether stop when touch ViewPager.
-* `setCycle(boolean cycle)` Whether auto scroll to first item when scroll to last item, only for `Adapter` that extends `PagerAdapter`.
-* `setSlideDuration(int slideDuration)` Set each item scroll duration.
+* `setSlideInterval(int slideInterval)` Set each item slide interval, default `5000`ms.
+* `setDirection(int direction)` Set auto scroll direction `DIRECTION_RIGHT` or `DIRECTION_LEFT`, default `RIGHT`.
+* `setStopWhenTouch(boolean stopWhenTouch)` Whether stop when touch ViewPager, default `true`.
+* `setCycle(boolean cycle)` Whether auto scroll to first item when scroll to last item, only for `Adapter` that extends `PagerAdapter`, default `false`.
+* `setSlideDuration(int slideDuration)` Set each item scroll duration, default `800`ms.
 
 # Credits
 

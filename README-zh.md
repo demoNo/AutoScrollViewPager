@@ -101,11 +101,11 @@ mViewPager.startAutoScroll();
 
 * `startAutoScroll()` 开启自动滚动.
 * `stopAutoScroll()` 停止自动滚动.
-* `setSlideInterval(int slideInterval)` 设置自动滚动的间隔时间.
-* `setDirection(int direction)` 设置自动滚动的方向 `DIRECTION_RIGHT` 或者 `DIRECTION_LEFT`.
-* `setStopWhenTouch(boolean stopWhenTouch)` 触摸时是否停止自动滚动.
-* `setCycle(boolean cycle)` 当自动滚动到最后一个item时是否自动回到第一个item，只对继承自 `PagerAdapter`的 `Adapter`有效.
-* `setSlideDuration(int slideDuration)` 设置自动滚动的一个item的时长.
+* `setSlideInterval(int slideInterval)` 设置自动滚动的间隔时间，默认5000毫秒.
+* `setDirection(int direction)` 设置自动滚动的方向 `DIRECTION_RIGHT` 或者 `DIRECTION_LEFT`，默认向右.
+* `setStopWhenTouch(boolean stopWhenTouch)` 触摸时是否停止自动滚动，默认为true.
+* `setCycle(boolean cycle)` 当自动滚动到最后一个item时是否自动回到第一个item，只对继承自 `PagerAdapter`的 `Adapter`有效，默认false.
+* `setSlideDuration(int slideDuration)` 设置自动滚动的一个item的时长，默认800毫秒.
 
 # 鸣谢
 
