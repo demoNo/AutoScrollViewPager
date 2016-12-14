@@ -57,6 +57,19 @@ Maven
 
 # How to use
 
+* use in xml
+
+```
+<com.github.demono.AutoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:stopWhenTouch="true"
+        app:slideInterval="5000"
+        app:slideDirection="right"
+        app:slideDuration="5000"/>
+```
+
 * Create an Adapter extends InfinitePagerAdapter
 ```
 public class MyAdapter extends InfinitePagerAdapter {
@@ -87,3 +100,18 @@ mViewPager.setAdapter(mAdapter);
 // optional start auto scroll
 mViewPager.startAutoScroll();
 ```
+
+# More setting
+
+* `startAutoScroll()` Start auto scroll.
+* `stopAutoScroll()` Stop auto scroll.
+* `setSlideInterval(int slideInterval)` Set each item slide interval.
+* `setDirection(int direction)` Set auto scroll direction `DIRECTION_RIGHT` or `DIRECTION_LEFT`.
+* `setStopWhenTouch(boolean stopWhenTouch)` Whether stop when touch ViewPager.
+* `setCycle(boolean cycle)` Whether auto scroll to first item when scroll to last item, only for `Adapter` that extends `PagerAdapter`.
+* `setSlideDuration(int slideDuration)` Set each item scroll duration.
+
+# Credits
+
+* [android-auto-scroll-view-pager](https://github.com/Trinea/android-auto-scroll-view-pager) Android auto scroll viewpager or viewpager in viewpager.
+* [How to make a ViewPager loop](http://stackoverflow.com/questions/10188011/how-to-make-a-viewpager-loop/12965787#12965787)

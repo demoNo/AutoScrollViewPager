@@ -53,6 +53,19 @@ Maven
 
 # 使用
 
+* 在xml中定义
+
+```
+<com.github.demono.AutoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:stopWhenTouch="true"
+        app:slideInterval="5000"
+        app:slideDirection="right"
+        app:slideDuration="5000"/>
+```
+
 * 创建Adapter继承InfinitePagerAdapter
 ```
 public class MyAdapter extends InfinitePagerAdapter {
@@ -83,3 +96,18 @@ mViewPager.setAdapter(mAdapter);
 // optional start auto scroll
 mViewPager.startAutoScroll();
 ```
+
+# 更多设置
+
+* `startAutoScroll()` 开启自动滚动.
+* `stopAutoScroll()` 停止自动滚动.
+* `setSlideInterval(int slideInterval)` 设置自动滚动的间隔时间.
+* `setDirection(int direction)` 设置自动滚动的方向 `DIRECTION_RIGHT` 或者 `DIRECTION_LEFT`.
+* `setStopWhenTouch(boolean stopWhenTouch)` 触摸时是否停止自动滚动.
+* `setCycle(boolean cycle)` 当自动滚动到最后一个item时是否自动回到第一个item，只对继承自 `PagerAdapter`的 `Adapter`有效.
+* `setSlideDuration(int slideDuration)` 设置自动滚动的一个item的时长.
+
+# 鸣谢
+
+* [android-auto-scroll-view-pager](https://github.com/Trinea/android-auto-scroll-view-pager) Android auto scroll viewpager or viewpager in viewpager.
+* [How to make a ViewPager loop](http://stackoverflow.com/questions/10188011/how-to-make-a-viewpager-loop/12965787#12965787)
