@@ -23,7 +23,7 @@ allprojects {
 * Add the dependency
 ```Gradle
 dependencies {
-	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.1'
+	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
 }
 ```
 
@@ -45,7 +45,7 @@ Maven
 <dependency>
 	    <groupId>com.github.demoNo</groupId>
 	    <artifactId>AutoScrollViewPager</artifactId>
-	    <version>v1.0.1</version>
+	    <version>v1.0.2</version>
 </dependency>
 ```
 
