@@ -45,7 +45,7 @@ Maven
 </dependency>
 ```
 
-# 功能
+## 功能
 
 * 可以无限滚动
 * 自定义滚动时间
@@ -53,7 +53,7 @@ Maven
 * 可以左右自动滚动
 * todo
 
-# 使用
+## 使用
 
 * 在xml中定义
 
@@ -102,7 +102,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-# 更多设置
+## 更多设置
 
 * `startAutoScroll()` 开启自动滚动.
 * `stopAutoScroll()` 停止自动滚动.
@@ -112,12 +112,12 @@ protected void onCreate(Bundle savedInstanceState) {
 * `setCycle(boolean cycle)` 当自动滚动到最后一个item时是否自动回到第一个item，只对继承自 `PagerAdapter`的 `Adapter`有效，默认false.
 * `setSlideDuration(int slideDuration)` 设置自动滚动的一个item的时长，默认800毫秒.
 
-# 鸣谢
+## 鸣谢
 
 * [android-auto-scroll-view-pager](https://github.com/Trinea/android-auto-scroll-view-pager) Android auto scroll viewpager or viewpager in viewpager.
 * [How to make a ViewPager loop](http://stackoverflow.com/questions/10188011/how-to-make-a-viewpager-loop/12965787#12965787)
 
-# 版权信息
+## 版权信息
 
 ```
                     Copyright 2016 demoNo

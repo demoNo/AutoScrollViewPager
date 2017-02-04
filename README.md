@@ -49,7 +49,7 @@ Maven
 </dependency>
 ```
 
-# Feature
+## Feature
 
 * Unlimited scrolling
 * Custom slide duration
@@ -57,7 +57,7 @@ Maven
 * Slide both right and left
 * todo
 
-# How to use
+## How to use
 
 * Use in xml
 
@@ -106,7 +106,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-# More setting
+## More setting
 
 * `startAutoScroll()` Start auto scroll.
 * `stopAutoScroll()` Stop auto scroll.
@@ -116,12 +116,12 @@ protected void onCreate(Bundle savedInstanceState) {
 * `setCycle(boolean cycle)` Whether auto scroll to first item when scroll to last item, only for `Adapter` that extends `PagerAdapter`, default `false`.
 * `setSlideDuration(int slideDuration)` Set each item scroll duration, default `800`ms.
 
-# Credits
+## Credits
 
 * [android-auto-scroll-view-pager](https://github.com/Trinea/android-auto-scroll-view-pager) Android auto scroll viewpager or viewpager in viewpager.
 * [How to make a ViewPager loop](http://stackoverflow.com/questions/10188011/how-to-make-a-viewpager-loop/12965787#12965787)
 
-#Licence
+## Licence
 
 ```
                     Copyright 2016 demoNo
