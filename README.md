@@ -13,17 +13,17 @@ Gradle
 * Add it in your root build.gradle at the end of repositories:
 ```Gradle
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+    repositories {
+	...
+	maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
 * Add the dependency
 ```Gradle
 dependencies {
-	    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
+    compile 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
 }
 ```
 
@@ -33,19 +33,19 @@ Maven
 * Add the JitPack repository to your build file
 ```xml
 <repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>
 ```
 
 * Add the dependency
 ```xml
 <dependency>
-	    <groupId>com.github.demoNo</groupId>
-	    <artifactId>AutoScrollViewPager</artifactId>
-	    <version>v1.0.2</version>
+    <groupId>com.github.demoNo</groupId>
+    <artifactId>AutoScrollViewPager</artifactId>
+    <version>v1.0.2</version>
 </dependency>
 ```
 
@@ -63,13 +63,13 @@ Maven
 
 ```xml
 <com.github.demono.AutoScrollViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:stopWhenTouch="true"
-        app:slideInterval="5000"
-        app:slideDirection="right"
-        app:slideDuration="5000"/>
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:stopWhenTouch="true"
+    app:slideInterval="5000"
+    app:slideDirection="right"
+    app:slideDuration="5000"/>
 ```
 
 * Create an Adapter extends InfinitePagerAdapter
